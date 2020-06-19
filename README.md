@@ -91,5 +91,21 @@ b. How do you avoid duplicating code or introducing unneeded overhead?
 
 Solution: Added an instance variable of Fish and call the fish methods when required. 
 
+## D. Model animals that change their behaviour over time 
 
+### 1. Can you model a butterfly? 
+
+a. A butterfly can fly 
+
+b. A butterfly does not make a sound 
+
+Solution: Done
+
+### 2. Can you optimize your model to account for the metamorphosis from caterpillar to butterfly? 
+
+a. A caterpillar cannot fly 
+
+b. A caterpillar can walk (crawl) 
+
+Solution: Accounted for metamorphosis of caterpillar to butterfly by adding a getter/setter to check isCaterpillar and update its behavior accordingly in the Butterfly class.
  
