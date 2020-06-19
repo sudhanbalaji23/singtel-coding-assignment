@@ -142,6 +142,15 @@ public class SingtelAssignmentApplication {
 		System.out.println("No. of Animals that can walk: " + walkCount);
 		System.out.println("No. of Animals that can sing: " + singCount);
 		System.out.println("No. of Animals that can swim: " + swimCount);
-	}
 
+		// Bonus
+		Rooster languageRooster = new Rooster();
+		String[] languages = { "Danish", "Dutch", "Finnish", "French", "German", "Greek", "Hebrew", "Hungarian",
+				"Italian", "Japanese", "Portuguese", "Russian", "Swedish", "Turkish", "Urdu", "Tamil" };
+
+		System.out.println("Bonus ::::: Rooster in different languages :::::");
+		for (String language : languages) {
+			languageRooster.sing(language);
+		}
+	}
 }

@@ -124,4 +124,53 @@ c. how many of these animals can sing? - 7
 d. how many of these animals can swim? - 5 
 
 Solution: Completed. Refer screenshots of the complete output console 
+
+## BONUS
+
+### 1. Can you add a second language (if you know a language other than English) Use the rooster as a PoC for demonstrating this. For example, this is how the Rooster sounds differently depending on language. Please add the rooster sound in your native tongue. 
+
+• Danish: kykyliky • Dutch: kukeleku • Finnish: kukko kiekuu • French: cocorico • German: kikeriki • Greek: kikiriki 
+• Hebrew: coo-koo-ri-koo • Hungarian: kukuriku • Italian: chicchirichi • Japanese: ko-ke-kok-ko-o • Portuguese: cucurucu • Russian: kukareku • Swedish: kuckeliku • Turkish: kuk-kurri-kuuu • Urdu: kuklooku 
+
+Solution: Completed. Refer screenshots of the complete output console
+
+### 2. Can you design a RESTful API for querying these animals?
+
+Solution: 
+
+ The Animals RESTful APi will have only GET and no POST
+ 
+ RESTful API GET URL (All Animals) --> http://localhost:8090/animals
+ 
+ 
+ <animals>
+  <animal type="dog">
+	<name>dog</name>
+	<walk>I am walking</walk>
+	<sing>Woof, woof</sing>
+	<fly>Flying.. Nay.. Nay..</fly>
+	<swim>Swimming.. Not so much..</swim>
+  </animal>
+  .
+  .
+  .
+  <animal type="duck">
+	<name>duck</name>
+	<walk>I am walking</walk>
+	<sing>Quack, quack</sing>
+	<fly>I am flying</fly>
+	<swim>Splash.. Splash..</swim>
+  </animal>
+</animals>
+
+ RESTFul API GET URL (Specific Animal) --> http://localhost:8090/animals/dog
+ 
+<animal type="dog">
+	<name>dog</name>
+	<walk>I am walking</walk>
+	<sing>Woof, woof</sing>
+	<fly>Flying.. Nay.. Nay..</fly>
+	<swim>Swimming.. Not so much..</swim>
+</animal>
+
  
