@@ -21,4 +21,9 @@ public class Bird implements Animal {
 		System.out.println("I am walking");
 	}
 
+	@Override
+	public void swim() {
+		System.out.println("Nay.. Cant swim");
+	}
+
 }

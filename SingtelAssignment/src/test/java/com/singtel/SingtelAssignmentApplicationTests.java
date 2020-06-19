@@ -11,7 +11,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import com.singtel.animal.Animal;
 import com.singtel.animal.Bird;
+import com.singtel.animal.Chicken;
+import com.singtel.animal.Duck;
 
 @SpringBootTest
 class SingtelAssignmentApplicationTests {
@@ -35,7 +38,7 @@ class SingtelAssignmentApplicationTests {
 	
 	@Test
 	public void validateBird() throws IOException {
-		Bird bird = new Bird(); 
+		Animal bird = new Bird(); 
 		bird.walk(); 
 		assertEquals("I am walking", outContent.toString().trim());
 		outContent.reset();
@@ -44,5 +47,38 @@ class SingtelAssignmentApplicationTests {
         outContent.reset();
         bird.sing(); 
         assertEquals("La.. La.. La..", outContent.toString().trim());
+        outContent.reset();
+    }
+	
+	@Test
+	public void validateChicken() throws IOException {
+		Animal chicken = new Chicken(); 
+		chicken.walk(); 
+		assertEquals("I am walking", outContent.toString().trim());
+		outContent.reset();
+		chicken.fly(); 
+        assertEquals("Flying.. Nay.. Nay..", outContent.toString().trim());
+        outContent.reset();
+        chicken.sing(); 
+        assertEquals("Cluck, cluck", outContent.toString().trim());
+        outContent.reset();
+    }
+	
+	@Test
+	public void validateDuck() throws IOException {
+		Animal duck = new Duck(); 
+		duck.walk(); 
+		assertEquals("I am walking", outContent.toString().trim());
+		outContent.reset();
+		duck.fly(); 
+        assertEquals("I am flying", outContent.toString().trim());
+        outContent.reset();
+        duck.sing(); 
+        assertEquals("Quack, quack", outContent.toString().trim());
+        outContent.reset();
+        duck.swim(); 
+        assertEquals("Splash.. Splash..", outContent.toString().trim());
+        outContent.reset();
+        
     }
 }

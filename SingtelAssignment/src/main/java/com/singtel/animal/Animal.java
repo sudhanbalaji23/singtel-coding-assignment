@@ -14,4 +14,6 @@ public interface Animal {
 	public void sing();
 
 	public void walk();
+	
+	public void swim();
 }
