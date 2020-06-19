@@ -13,8 +13,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import com.singtel.animal.Animal;
 import com.singtel.animal.Bird;
+import com.singtel.animal.Cat;
 import com.singtel.animal.Chicken;
+import com.singtel.animal.Dog;
 import com.singtel.animal.Duck;
+import com.singtel.animal.Objects;
+import com.singtel.animal.Parrot;
+import com.singtel.animal.Phone;
 import com.singtel.animal.Rooster;
 import com.singtel.animal.RoosterAlternate;
 
@@ -109,6 +114,72 @@ class SingtelAssignmentApplicationTests {
         outContent.reset();
         rooster.sing(); 
         assertEquals("Cock-a-doodle-doo", outContent.toString().trim());
+        outContent.reset();
+    }
+	
+	@Test
+	public void validateDog() throws IOException {
+		Animal dog = new Dog(); 
+		dog.walk(); 
+		assertEquals("I am walking", outContent.toString().trim());
+		outContent.reset();
+		dog.fly(); 
+        assertEquals("Flying.. Nay.. Nay..", outContent.toString().trim());
+        outContent.reset();
+        dog.sing(); 
+        assertEquals("Woof, woof", outContent.toString().trim());
+        outContent.reset();
+    }
+	
+	@Test
+	public void validateCat() throws IOException {
+		Animal cat = new Cat(); 
+		cat.walk(); 
+		assertEquals("I am walking", outContent.toString().trim());
+		outContent.reset();
+		cat.fly(); 
+        assertEquals("Flying.. Nay.. Nay..", outContent.toString().trim());
+        outContent.reset();
+        cat.sing(); 
+        assertEquals("Meow", outContent.toString().trim());
+        outContent.reset();
+    }
+	
+	@Test
+	public void validatePhone() throws IOException {
+		Objects phone = new Phone(); 
+        phone.sing(); 
+        assertEquals("Tring.. Tring..", outContent.toString().trim());
+        outContent.reset();
+    }
+	
+	@Test
+	public void validateParrot() throws IOException {
+		Animal dogSoundingParrot = new Parrot(new Dog()); 
+		dogSoundingParrot.walk(); 
+		assertEquals("I am walking", outContent.toString().trim());
+		outContent.reset();
+		dogSoundingParrot.fly(); 
+        assertEquals("I am flying", outContent.toString().trim());
+        outContent.reset();
+        dogSoundingParrot.sing(); 
+        assertEquals("Woof, woof", outContent.toString().trim());
+        outContent.reset();
+        
+        Animal catSoundingParrot = new Parrot(new Cat()); 
+        catSoundingParrot.walk(); 
+		assertEquals("I am walking", outContent.toString().trim());
+		outContent.reset();
+		catSoundingParrot.fly(); 
+        assertEquals("I am flying", outContent.toString().trim());
+        outContent.reset();
+        catSoundingParrot.sing(); 
+        assertEquals("Meow", outContent.toString().trim());
+        outContent.reset();
+        
+        Animal phoneSoundingParrot = new Parrot(new Phone()); 
+        phoneSoundingParrot.sing(); 
+        assertEquals("Tring.. Tring..", outContent.toString().trim());
         outContent.reset();
     }
 	

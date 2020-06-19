@@ -5,8 +5,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.singtel.animal.Animal;
 import com.singtel.animal.Bird;
+import com.singtel.animal.Cat;
 import com.singtel.animal.Chicken;
+import com.singtel.animal.Dog;
 import com.singtel.animal.Duck;
+import com.singtel.animal.Parrot;
+import com.singtel.animal.Phone;
 import com.singtel.animal.Rooster;
 import com.singtel.animal.RoosterAlternate;
 
@@ -45,6 +49,27 @@ public class SingtelAssignmentApplication {
 		roosterImposter.walk();
 		roosterImposter.fly();
 		roosterImposter.sing();
+		// Question A.4
+		System.out.println("Question A.4 ::::: dogSoundingParrot :::::");
+		Parrot dogSoundingParrot = new Parrot(new Dog());
+		dogSoundingParrot.walk();
+		dogSoundingParrot.fly();
+		dogSoundingParrot.sing();
+		System.out.println("Question A.4 ::::: catSoundingParrot :::::");
+		Parrot catSoundingParrot = new Parrot(new Cat());
+		catSoundingParrot.walk();
+		catSoundingParrot.fly();
+		catSoundingParrot.sing();
+		System.out.println("Question A.4 ::::: roosterSoundingParrot :::::");
+		Parrot roosterSoundingParrot = new Parrot(new Rooster());
+		roosterSoundingParrot.walk();
+		roosterSoundingParrot.fly();
+		roosterSoundingParrot.sing();
+		System.out.println("Question A.4 ::::: phoneSoundingParrot :::::");
+		Parrot phoneSoundingParrot = new Parrot(new Phone());
+		phoneSoundingParrot.walk();
+		phoneSoundingParrot.fly();
+		phoneSoundingParrot.sing();
 	}
 
 }

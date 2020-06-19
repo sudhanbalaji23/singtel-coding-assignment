@@ -7,7 +7,7 @@ package com.singtel.animal;
  * @author Sudhan Balaji
  *
  */
-public interface Animal {
+public interface Animal extends Objects{
 
 	public void fly();
 
