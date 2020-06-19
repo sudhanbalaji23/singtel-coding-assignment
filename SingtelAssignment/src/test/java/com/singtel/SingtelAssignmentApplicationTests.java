@@ -15,13 +15,17 @@ import com.singtel.animal.Animal;
 import com.singtel.animal.Bird;
 import com.singtel.animal.Cat;
 import com.singtel.animal.Chicken;
+import com.singtel.animal.ClownFish;
 import com.singtel.animal.Dog;
+import com.singtel.animal.Dolphin;
 import com.singtel.animal.Duck;
+import com.singtel.animal.Fish;
 import com.singtel.animal.Objects;
 import com.singtel.animal.Parrot;
 import com.singtel.animal.Phone;
 import com.singtel.animal.Rooster;
 import com.singtel.animal.RoosterAlternate;
+import com.singtel.animal.Shark;
 
 @SpringBootTest
 class SingtelAssignmentApplicationTests {
@@ -183,4 +187,72 @@ class SingtelAssignmentApplicationTests {
         outContent.reset();
     }
 	
+	@Test
+	public void validateShark() throws IOException {
+		Fish shark = new Shark(); 
+		shark.walk(); 
+		assertEquals("Walking.. Nay.. Nay..", outContent.toString().trim());
+		outContent.reset();
+		shark.fly(); 
+        assertEquals("Flying.. Nay.. Nay..", outContent.toString().trim());
+        outContent.reset();
+        shark.sing(); 
+        assertEquals("Singing.. Nay.. Nay..", outContent.toString().trim());
+        outContent.reset();
+    	shark.swim();
+    	assertEquals("Splash.. Splash..", outContent.toString().trim());
+        outContent.reset();
+		shark.colour();
+		assertEquals("I am grey", outContent.toString().trim());
+        outContent.reset();
+		shark.eat();
+		assertEquals("Yummy Yeah.. I eat other fishes", outContent.toString().trim());
+        outContent.reset();
+		shark.joke();
+		assertEquals("Funny?!? Never..", outContent.toString().trim());
+        outContent.reset();
+    }
+	
+	@Test
+	public void validateClownFish() throws IOException {
+		Fish clownfish = new ClownFish(); 
+		clownfish.walk(); 
+		assertEquals("Walking.. Nay.. Nay..", outContent.toString().trim());
+		outContent.reset();
+		clownfish.fly(); 
+        assertEquals("Flying.. Nay.. Nay..", outContent.toString().trim());
+        outContent.reset();
+        clownfish.sing(); 
+        assertEquals("Singing.. Nay.. Nay..", outContent.toString().trim());
+        outContent.reset();
+    	clownfish.swim();
+    	assertEquals("Splash.. Splash..", outContent.toString().trim());
+        outContent.reset();
+		clownfish.colour();
+		assertEquals("I am orange", outContent.toString().trim());
+        outContent.reset();
+		clownfish.eat();
+		assertEquals("No !! I dont eat other fishes", outContent.toString().trim());
+        outContent.reset();
+		clownfish.joke();
+		assertEquals("I have some sense of humor. Comes from my name", outContent.toString().trim());
+        outContent.reset();
+    }
+	
+	@Test
+	public void validateDolphin() throws IOException {
+		Animal dolphin = new Dolphin(); 
+		dolphin.walk(); 
+		assertEquals("Walking.. Nay.. Nay..", outContent.toString().trim());
+		outContent.reset();
+		dolphin.fly(); 
+        assertEquals("Flying.. Nay.. Nay..", outContent.toString().trim());
+        outContent.reset();
+        dolphin.sing(); 
+        assertEquals("Singing.. Nay.. Nay..", outContent.toString().trim());
+        outContent.reset();
+    	dolphin.swim();
+    	assertEquals("Splash.. Splash..", outContent.toString().trim());
+        outContent.reset();
+    }
 }

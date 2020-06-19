@@ -7,12 +7,15 @@ import com.singtel.animal.Animal;
 import com.singtel.animal.Bird;
 import com.singtel.animal.Cat;
 import com.singtel.animal.Chicken;
+import com.singtel.animal.ClownFish;
 import com.singtel.animal.Dog;
+import com.singtel.animal.Dolphin;
 import com.singtel.animal.Duck;
 import com.singtel.animal.Parrot;
 import com.singtel.animal.Phone;
 import com.singtel.animal.Rooster;
 import com.singtel.animal.RoosterAlternate;
+import com.singtel.animal.Shark;
 
 @SpringBootApplication
 public class SingtelAssignmentApplication {
@@ -70,6 +73,32 @@ public class SingtelAssignmentApplication {
 		phoneSoundingParrot.walk();
 		phoneSoundingParrot.fly();
 		phoneSoundingParrot.sing();
+		// Question B.1
+		System.out.println("Question B.1 ::::: Shark :::::");
+		Shark shark = new Shark();
+		shark.fly();
+		shark.sing();
+		shark.walk();
+		shark.swim();
+		shark.colour();
+		shark.eat();
+		shark.joke();
+		System.out.println("Question B.1 ::::: ClownFish :::::");
+		ClownFish clownFish = new ClownFish();
+		clownFish.fly();
+		clownFish.sing();
+		clownFish.walk();
+		clownFish.swim();
+		clownFish.colour();
+		clownFish.eat();
+		clownFish.joke();
+		// Can use any fish as a constructor argument
+		System.out.println("Question B.1 ::::: Dolphin :::::");
+		Dolphin dolphin = new Dolphin();
+		dolphin.fly();
+		dolphin.sing();
+		dolphin.swim();
+		dolphin.walk();
 	}
 
 }

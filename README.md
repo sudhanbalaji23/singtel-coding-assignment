@@ -60,4 +60,36 @@ d. How do you keep the parrot maintainable? What if we need another parrot lives
 Solution: Introduced an interface Objects (that only sings.. assuming a phone sings) as the parent of all. Added a Parrot class with a parameterized constructor taking objects as parameter. 
 
 
+
+## B. Model fish as well as other swimming animals 
+
+### 1. In addition to the birds, can you model a fish? 
+
+a. Fishes don’t sing 
+
+b. Fishes don’t walk 
+
+c. Fishes can swim 
+
+Solution: Added an class Fish which implements Animal and added its specific characteristic methods
+
+### 2. Can you specialize the fish as a Shark and as a Clownfish? 
+
+a. Sharks are large and grey 
+
+b. Clownfish are small and colourful (orange) 
+
+c. Clownfish make jokes d. Sharks eat other fish  
+
+Solution: Shark & ClownFish extending Fish and has its own specific characteristic method implementations
+
+### 3. Dolphins are not exactly fish, yet, they are good swimmers 
+
+a. Can you model a dolphin that swims without inheriting from a fish class? 
+
+b. How do you avoid duplicating code or introducing unneeded overhead? 
+
+Solution: Added an instance variable of Fish and call the fish methods when required. 
+
+
  
