@@ -10,11 +10,13 @@ package com.singtel.animal;
 
 public class Duck extends Bird {
 
-	public void sing() {
+	public boolean sing() {
 		System.out.println("Quack, quack");
+		return true;
 	}
 	
-	public void swim() {
+	public boolean swim() {
 		System.out.println("Splash.. Splash..");
+		return true;
 	}
 }

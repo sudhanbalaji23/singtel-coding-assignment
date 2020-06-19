@@ -15,7 +15,8 @@ public class Parrot extends Bird {
 		this.parrot = object;
 	}
 
-	public void sing() {
+	public boolean sing() {
 		this.parrot.sing();
+		return true;
 	}
 }

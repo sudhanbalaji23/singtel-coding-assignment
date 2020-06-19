@@ -108,4 +108,20 @@ a. A caterpillar cannot fly
 b. A caterpillar can walk (crawl) 
 
 Solution: Accounted for metamorphosis of caterpillar to butterfly by adding a getter/setter to check isCaterpillar and update its behavior accordingly in the Butterfly class.
+
+
+## E. Counting animals 
+
+Suppose you have an array of animals, e.g.  
+ Animal[] animals = new Animal[] { new Bird(), new Duck(), new Chicken(), new Rooster(), new Parrot(), new Fish(), new Shark(), new ClownFish(), new Dolphin(new Fish()), new Dog(), new Butterfly(), new Cat() }; 
+
+
+### 1. Can you share the code to count: (Excluded Frog in my example array)
+
+a. how many of these animals can fly?  - 4 
+b. how many of these animals can walk? - 7
+c. how many of these animals can sing? - 7
+d. how many of these animals can swim? - 5 
+
+Solution: Completed. Refer screenshots of the complete output console 
  

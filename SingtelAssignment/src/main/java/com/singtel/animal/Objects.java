@@ -8,5 +8,5 @@ package com.singtel.animal;
  *
  */
 public interface Objects {
-	public void sing();
+	public boolean sing();
 }

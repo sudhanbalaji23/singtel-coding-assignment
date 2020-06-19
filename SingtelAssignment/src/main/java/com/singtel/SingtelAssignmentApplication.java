@@ -12,6 +12,7 @@ import com.singtel.animal.ClownFish;
 import com.singtel.animal.Dog;
 import com.singtel.animal.Dolphin;
 import com.singtel.animal.Duck;
+import com.singtel.animal.Fish;
 import com.singtel.animal.Parrot;
 import com.singtel.animal.Phone;
 import com.singtel.animal.Rooster;
@@ -113,6 +114,34 @@ public class SingtelAssignmentApplication {
 		caterpillar.fly();
 		caterpillar.sing();
 		caterpillar.walk();
+
+		Animal[] animals = new Animal[] { new Bird(), new Duck(), new Chicken(), new Rooster(), new Parrot(new Bird()),
+				new Fish(), new Shark(), new ClownFish(), new Dolphin(), new Dog(), new Butterfly(), new Cat() };
+
+		int flyCount = 0;
+		int walkCount = 0;
+		int singCount = 0;
+		int swimCount = 0;
+
+		for (Animal animal : animals) {
+			if (animal.fly()) {
+				flyCount++;
+			}
+			if (animal.walk()) {
+				walkCount++;
+			}
+			if (animal.sing()) {
+				singCount++;
+			}
+			if (animal.swim()) {
+				swimCount++;
+			}
+		}
+		System.out.println("Question E ::::: Counting Animals :::::");
+		System.out.println("No. of Animals that can fly: " + flyCount);
+		System.out.println("No. of Animals that can walk: " + walkCount);
+		System.out.println("No. of Animals that can sing: " + singCount);
+		System.out.println("No. of Animals that can swim: " + swimCount);
 	}
 
 }

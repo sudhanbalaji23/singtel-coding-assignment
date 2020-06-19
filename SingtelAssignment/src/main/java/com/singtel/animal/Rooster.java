@@ -9,7 +9,8 @@ package com.singtel.animal;
  */
 public class Rooster extends Chicken{
 
-	public void sing() {
+	public boolean sing() {
 		System.out.println("Cock-a-doodle-doo");
+		return true;
 	}
 }

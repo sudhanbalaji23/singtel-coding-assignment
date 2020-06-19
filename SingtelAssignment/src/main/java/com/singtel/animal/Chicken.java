@@ -9,12 +9,14 @@ package com.singtel.animal;
  */
 public class Chicken extends Bird {
 
-	public void fly() {
+	public boolean fly() {
 		System.out.println("Flying.. Nay.. Nay..");
+		return false;
 	}
 
-	public void sing() {
+	public boolean sing() {
 		System.out.println("Cluck, cluck");
+		return true;
 	}
 
 }

@@ -9,11 +9,8 @@ package com.singtel.animal;
  */
 public interface Animal extends Objects{
 
-	public void fly();
-
-	public void sing();
-
-	public void walk();
-	
-	public void swim();
+	public boolean walk();
+	public boolean fly();
+	public boolean sing();
+	public boolean swim();
 }

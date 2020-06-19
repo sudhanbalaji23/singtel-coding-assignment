@@ -12,22 +12,22 @@ public class Dolphin implements Animal{
 	Fish fish = new Fish();
 
 	@Override
-	public void walk() {
-		fish.walk();
+	public boolean walk() {
+		return fish.walk();
 	}
 
 	@Override
-	public void fly() {
-		fish.fly();
+	public boolean fly() {
+		return fish.fly();
 	}
 
 	@Override
-	public void sing() {
-		fish.sing();
+	public boolean sing() {
+		return fish.sing();
 	}
 
-	public void swim() {
-		fish.swim();
+	public boolean swim() {
+		return fish.swim();
 	}
 
 }

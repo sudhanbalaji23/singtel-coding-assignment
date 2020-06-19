@@ -10,22 +10,26 @@ package com.singtel.animal;
 public class Fish implements Animal {
 
 	@Override
-	public void walk() {
+	public boolean walk() {
 		System.out.println("Walking.. Nay.. Nay..");
+		return false;
 	}
 
 	@Override
-	public void fly() {
+	public boolean fly() {
 		System.out.println("Flying.. Nay.. Nay..");
+		return false;
 	}
 
 	@Override
-	public void sing() {
+	public boolean sing() {
 		System.out.println("Singing.. Nay.. Nay..");
+		return false;
 	}
 
-	public void swim() {
+	public boolean swim() {
 		System.out.println("Splash.. Splash..");
+		return true;
 	}
 	
 	public void size() {

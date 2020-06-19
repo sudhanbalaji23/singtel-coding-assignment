@@ -10,8 +10,9 @@ package com.singtel.animal;
 public class Phone implements Objects{
 
 	@Override
-	public void sing() {
+	public boolean sing() {
 		System.out.println("Tring.. Tring..");
+		return true;
 		
 	}
 
