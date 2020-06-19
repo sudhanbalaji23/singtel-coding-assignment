@@ -13,6 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import com.singtel.animal.Animal;
 import com.singtel.animal.Bird;
+import com.singtel.animal.Butterfly;
 import com.singtel.animal.Cat;
 import com.singtel.animal.Chicken;
 import com.singtel.animal.ClownFish;
@@ -253,6 +254,35 @@ class SingtelAssignmentApplicationTests {
         outContent.reset();
     	dolphin.swim();
     	assertEquals("Splash.. Splash..", outContent.toString().trim());
+        outContent.reset();
+    }
+	
+	@Test
+	public void validateButterfly() throws IOException {
+		Butterfly butterfly = new Butterfly(); 
+		butterfly.walk(); 
+		assertEquals("Walking.. Nay.. Nay..", outContent.toString().trim());
+		outContent.reset();
+		butterfly.fly(); 
+        assertEquals("I am flying", outContent.toString().trim());
+        outContent.reset();
+        butterfly.sing(); 
+        assertEquals("Singing.. Nay.. Nay..", outContent.toString().trim());
+        outContent.reset();
+    }
+	
+	@Test
+	public void validateCaterpillar() throws IOException {
+		Butterfly caterpillar = new Butterfly(); 
+		caterpillar.setCaterpillar(true);
+		caterpillar.walk(); 
+		assertEquals("Baby la.. Crawling..", outContent.toString().trim());
+		outContent.reset();
+		caterpillar.fly(); 
+        assertEquals("Flying.. Nay.. Nay..", outContent.toString().trim());
+        outContent.reset();
+        caterpillar.sing(); 
+        assertEquals("Singing.. Nay.. Nay..", outContent.toString().trim());
         outContent.reset();
     }
 }

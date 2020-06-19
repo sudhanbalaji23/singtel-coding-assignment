@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.singtel.animal.Animal;
 import com.singtel.animal.Bird;
+import com.singtel.animal.Butterfly;
 import com.singtel.animal.Cat;
 import com.singtel.animal.Chicken;
 import com.singtel.animal.ClownFish;
@@ -99,6 +100,19 @@ public class SingtelAssignmentApplication {
 		dolphin.sing();
 		dolphin.swim();
 		dolphin.walk();
+		// Question B.2
+		System.out.println("Question B.2 ::::: Butterfly :::::");
+		Butterfly butterfly = new Butterfly();
+		butterfly.setCaterpillar(false);
+		butterfly.fly();
+		butterfly.sing();
+		butterfly.walk();
+		System.out.println("Question B.2 ::::: Caterpillar :::::");
+		Butterfly caterpillar = new Butterfly();
+		caterpillar.setCaterpillar(true);
+		caterpillar.fly();
+		caterpillar.sing();
+		caterpillar.walk();
 	}
 
 }
