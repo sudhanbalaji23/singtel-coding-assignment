@@ -30,3 +30,19 @@ c. A chicken says: “Cluck, cluck”
 d. A chicken cannot fly (assumption: its wings are clipped but ignore that) 
 
 Solution: Done. Added Chicken & Duck classes as sub-classes of bird and its own method variations.
+
+
+### 3. Now how would you model a rooster? 
+
+a. A rooster says: “Cock-a-doodle-doo” 
+
+Solution: Done. 
+
+b. How is the rooster related to the chicken? 
+
+Solution: Rooster class extends Chicken class and has its own implementation for the sing() method. 
+
+c. Can you think of other ways to model a rooster without using inheritance? 
+
+Solution: Without inheritance, the RoosterAlternate class is done using Chicken object as an instance variable and initialize using default constructor in the RoosterAlternate class.
+ 

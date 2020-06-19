@@ -15,6 +15,8 @@ import com.singtel.animal.Animal;
 import com.singtel.animal.Bird;
 import com.singtel.animal.Chicken;
 import com.singtel.animal.Duck;
+import com.singtel.animal.Rooster;
+import com.singtel.animal.RoosterAlternate;
 
 @SpringBootTest
 class SingtelAssignmentApplicationTests {
@@ -81,4 +83,33 @@ class SingtelAssignmentApplicationTests {
         outContent.reset();
         
     }
+	
+	@Test
+	public void validateRooster() throws IOException {
+		Animal rooster = new Rooster(); 
+		rooster.walk(); 
+		assertEquals("I am walking", outContent.toString().trim());
+		outContent.reset();
+		rooster.fly(); 
+        assertEquals("Flying.. Nay.. Nay..", outContent.toString().trim());
+        outContent.reset();
+        rooster.sing(); 
+        assertEquals("Cock-a-doodle-doo", outContent.toString().trim());
+        outContent.reset();
+    }
+	
+	@Test
+	public void validateRoosterAlternate() throws IOException {
+		RoosterAlternate rooster = new RoosterAlternate(); 
+		rooster.walk(); 
+		assertEquals("I am walking", outContent.toString().trim());
+		outContent.reset();
+		rooster.fly(); 
+        assertEquals("Flying.. Nay.. Nay..", outContent.toString().trim());
+        outContent.reset();
+        rooster.sing(); 
+        assertEquals("Cock-a-doodle-doo", outContent.toString().trim());
+        outContent.reset();
+    }
+	
 }

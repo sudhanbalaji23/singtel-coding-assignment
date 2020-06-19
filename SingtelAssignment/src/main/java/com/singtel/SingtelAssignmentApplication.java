@@ -7,6 +7,8 @@ import com.singtel.animal.Animal;
 import com.singtel.animal.Bird;
 import com.singtel.animal.Chicken;
 import com.singtel.animal.Duck;
+import com.singtel.animal.Rooster;
+import com.singtel.animal.RoosterAlternate;
 
 @SpringBootApplication
 public class SingtelAssignmentApplication {
@@ -32,6 +34,17 @@ public class SingtelAssignmentApplication {
 		duck.fly();
 		duck.sing();
 		duck.swim();
+		// Question A.3
+		System.out.println("Question A.3 ::::: Rooster :::::");
+		Animal rooster = new Rooster();
+		rooster.walk();
+		rooster.fly();
+		rooster.sing();
+		System.out.println("Question A.3 ::::: RoosterAlternate :::::");
+		RoosterAlternate roosterImposter = new RoosterAlternate();
+		roosterImposter.walk();
+		roosterImposter.fly();
+		roosterImposter.sing();
 	}
 
 }
